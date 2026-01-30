@@ -1,39 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App Portal</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --text: #f8fafc;
+            --accent: #38bdf8;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            text-align: center;
+        }
+
+        h1 { font-size: 3rem; margin-bottom: 10px; letter-spacing: -1px; }
+        p.subtitle { color: #94a3b8; margin-bottom: 40px; }
+
+        .app-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .app-card {
+            background: var(--card-bg);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 24px;
+            padding: 40px 20px;
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            backdrop-filter: blur(10px);
+        }
+
+        .app-card:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-8px);
+            border-color: var(--accent);
+        }
+
+        .icon { font-size: 50px; margin-bottom: 20px; display: block; }
+        
+        .app-card h3 { margin: 10px 0; font-size: 1.4rem; }
+        .app-card span { font-size: 0.85rem; color: #38bdf8; font-weight: bold; text-transform: uppercase; }
+        .app-card p { font-size: 0.9rem; color: #94a3b8; line-height: 1.5; }
+
+    </style>
 </head>
 <body>
 
-    <div class="dashboard">
-        <header>
-            <h1>Welcome</h1>
-            <p>Select an application to get started</p>
-        </header>
+<div class="container">
+    <h1>Welcome</h1>
+    <p class="subtitle">Select an application to get started</p>
 
-        <div class="app-grid">
-            <a href="apk.html" class="app-card">
-                <div class="icon-box blue">🎥</div>
-                <h3>J-TV Apk App (for FireSticks, Android TV, Meta Quests, Android Phones, And Most Android Systems)</h3>
-                <p>Need's Account Log In</p>
-            </a>
+    <div class="app-grid">
+        <a href="apk.html" class="app-card">
+            <span class="icon">🤖</span>
+            <span>J-TV Apk App (for FireSticks, Android TV, Meta Quests, Android Phones, And Most Android Systems)</span>
+        </a>
 
-            <a href="analytics.html" class="app-card">
-                <div class="icon-box purple">📈</div>
-                <h3>J-TV iPhone App (All Apple Phone Devices)</h3>
-                <p>Need's Account Log in</p>
-            </a>
-
-            <a href="settings.html" class="app-card">
-                <div class="icon-box orange">⚙️</div>
-                <h3>Settings</h3>
-                <p>System configuration</p>
-            </a>
-        </div>
+        <a href="iPhone.html" class="app-card">
+            <span class="icon">🍎</span>
+            <span>J-TV iPhone App (All Apple Phone Devices)</span>
+        </a>
+        </a>
     </div>
+</div>
 
 </body>
 </html>
