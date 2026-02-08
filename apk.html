@@ -56,9 +56,10 @@ p{color:#b5b5d6;font-size:14px;line-height:1.5}
   font-size:13px;
 }
 .direct{
-  margin-top:10px;
+  margin-top:12px;
   font-size:12px;
   color:#888;
+  word-break:break-all;
 }
 </style>
 </head>
@@ -67,19 +68,19 @@ p{color:#b5b5d6;font-size:14px;line-height:1.5}
   <div class="card">
     <div class="icon">TV</div>
     <h1>J-TV</h1>
-    <p>Works for most Android systems</p>
+    <p>Works for most Android / Fire TV systems</p>
 
-    <!-- FIRESTICK SAFE DIRECT DOWNLOAD -->
+    <!-- FIRESTICK COMPATIBLE DOWNLOAD (GitHub Release direct file) -->
     <a class="install"
-       href="https://raw.githubusercontent.com/Jbrimz088/Downloader/main/Apps/J-TV/apk/J-TV-universal.apk">
+       href="https://github.com/Jbrimz088/Downloader/releases/latest/download/J-TV-universal.apk">
        Install APK
     </a>
 
-    <!-- FALLBACK DIRECT LINK (Downloader can grab plain links easier) -->
-    <p class="direct">
-      Direct link:<br>
-      https://raw.githubusercontent.com/Jbrimz088/Downloader/main/Apps/J-TV/apk/J-TV-universal.apk
-    </p>
+    <!-- Plain direct link fallback (Downloader sometimes prefers raw text links) -->
+    <div class="direct">
+      Direct:<br>
+      https://github.com/Jbrimz088/Downloader/releases/latest/download/J-TV-universal.apk
+    </div>
 
     <a class="back" href="index.html">← Pick Other Device</a>
   </div>
