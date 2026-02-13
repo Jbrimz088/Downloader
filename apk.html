@@ -6,73 +6,81 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
-body{
-  margin:0;
-  min-height:100vh;
-  background:linear-gradient(180deg,#0b0b0f,#000);
-  color:#fff;
-  font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
-.card{
-  background:#1c1c2b;
-  padding:24px;
-  border-radius:18px;
-  width:340px;
-  box-shadow:0 0 40px rgba(124,77,255,.5);
-}
-.icon{
-  width:80px;
-  height:80px;
-  border-radius:20px;
-  background:linear-gradient(135deg,#7c4dff,#5b2bd6);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-weight:800;
-  font-size:26px;
-}
-h1{margin:14px 0 6px}
-p{color:#b5b5d6;font-size:14px}
-.install{
-  margin-top:16px;
-  text-align:center;
-  padding:15px;
-  border-radius:14px;
-  background:linear-gradient(135deg,#7c4dff,#5b2bd6);
-  color:#fff;
-  text-decoration:none;
-  font-weight:800;
-  display:block;
-}
-.fallback{
-  margin-top:10px;
-  text-align:center;
-  padding:12px;
-  border-radius:12px;
-  background:#2a2a3d;
-  color:#fff;
-  text-decoration:none;
-  font-weight:700;
-  display:block;
-  font-size:13px;
-}
-.back{
-  margin-top:12px;
-  display:block;
-  text-align:center;
-  color:#b5b5d6;
-  text-decoration:none;
-  font-size:13px;
-}
-.direct{
-  margin-top:10px;
-  font-size:12px;
-  color:#888;
-  word-break:break-all;
-}
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: #0b0b0f; /* Solid fallback */
+    background: linear-gradient(180deg, #0b0b0f, #000);
+    color: #fff;
+    font-family: sans-serif; /* Standard TV font */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .card {
+    background: #1c1c2b;
+    padding: 24px;
+    border-radius: 18px;
+    width: 100%;
+    max-width: 340px;
+    box-shadow: 0 0 30px rgba(124, 77, 255, 0.3);
+    text-align: center;
+  }
+  .icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #7c4dff, #5b2bd6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 26px;
+    margin: 0 auto;
+  }
+  h1 { margin: 15px 0 5px; font-size: 24px; }
+  p { color: #b5b5d6; font-size: 14px; margin-bottom: 20px; }
+  
+  /* Buttons optimized for Remote Control clicking */
+  .btn {
+    display: block;
+    margin-top: 12px;
+    padding: 15px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: transform 0.2s;
+  }
+  .btn:focus { 
+    outline: 3px solid #fff; 
+    transform: scale(1.05);
+  }
+  .install {
+    background: #7c4dff;
+    color: #fff;
+  }
+  .fallback {
+    background: #2a2a3d;
+    color: #fff;
+    font-size: 13px;
+  }
+  .back {
+    margin-top: 20px;
+    color: #888;
+    text-decoration: none;
+    font-size: 13px;
+    display: inline-block;
+  }
+  .url-box {
+    margin-top: 15px;
+    padding: 10px;
+    background: #000;
+    font-size: 10px;
+    color: #555;
+    word-break: break-all;
+    border-radius: 5px;
+  }
 </style>
 </head>
 
@@ -80,26 +88,25 @@ p{color:#b5b5d6;font-size:14px}
   <div class="card">
     <div class="icon">TV</div>
     <h1>J-TV</h1>
-    <p>Fire TV / Android compatible</p>
+    <p>Official Fire TV & Android Download</p>
 
-    <!-- MAIN DOWNLOAD -->
-    <a class="install"
+    <a class="btn install" 
+       download="jtv-latest.apk"
        href="https://www.dropbox.com/scl/fi/bv9vpu2gwkn0qughpqkz0/app-universal-release.apk?rlkey=7rzlzooufftmatqdpa1x2mpam&st=y9w53qvc&dl=1">
-       Install APK
+       DOWNLOAD APK
     </a>
 
-    <!-- ERROR FALLBACK BUTTON (GOOGLE DRIVE) -->
-    <a class="fallback"
+    <a class="btn fallback" 
        href="https://drive.google.com/drive/folders/1HHhDBBfdXppYP4RdO4yEpRa978sZVgE0">
-       Error? Try this
+       Alternative Link (Drive)
     </a>
 
-    <div class="direct">
-      Direct:<br>
-      https://www.dropbox.com/scl/fi/bv9vpu2gwkn0qughpqkz0/app-universal-release.apk?rlkey=7rzlzooufftmatqdpa1x2mpam&st=y9w53qvc&dl=1
+    <div class="url-box">
+      <strong>Direct URL:</strong><br>
+      https://bit.ly/your-short-link-here
     </div>
 
-    <a class="back" href="index.html">← Pick Other Device</a>
+    <a class="back" href="index.html">← Back to Menu</a>
   </div>
 </body>
 </html>
