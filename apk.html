@@ -4,15 +4,14 @@
 <meta charset="UTF-8">
 <title>J-TV • J-Store</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <style>
   body {
     margin: 0;
     min-height: 100vh;
-    background: #0b0b0f; /* Solid fallback */
+    background: #0b0b0f;
     background: linear-gradient(180deg, #0b0b0f, #000);
     color: #fff;
-    font-family: sans-serif; /* Standard TV font */
+    font-family: sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,8 +40,6 @@
   }
   h1 { margin: 15px 0 5px; font-size: 24px; }
   p { color: #b5b5d6; font-size: 14px; margin-bottom: 20px; }
-  
-  /* Buttons optimized for Remote Control clicking */
   .btn {
     display: block;
     margin-top: 12px;
@@ -56,57 +53,36 @@
     outline: 3px solid #fff; 
     transform: scale(1.05);
   }
-  .install {
-    background: #7c4dff;
-    color: #fff;
-  }
-  .fallback {
-    background: #2a2a3d;
-    color: #fff;
-    font-size: 13px;
-  }
-  .back {
-    margin-top: 20px;
-    color: #888;
-    text-decoration: none;
-    font-size: 13px;
-    display: inline-block;
-  }
-  .url-box {
-    margin-top: 15px;
-    padding: 10px;
-    background: #000;
-    font-size: 10px;
-    color: #555;
-    word-break: break-all;
-    border-radius: 5px;
-  }
+  .install { background: #7c4dff; color: #fff; }
+  .fallback { background: #2a2a3d; color: #fff; font-size: 13px; }
+  .back { margin-top: 20px; color: #888; text-decoration: none; font-size: 13px; display: inline-block; }
+  .url-box { margin-top: 15px; padding: 10px; background: #000; font-size: 10px; color: #555; word-break: break-all; border-radius: 5px; }
 </style>
 </head>
-
 <body>
+
   <div class="card">
     <div class="icon">TV</div>
     <h1>J-TV</h1>
     <p>Official Fire TV & Android Download</p>
 
     <a class="btn install" 
-       download="jtv-latest.apk"
-       href="https://www.dropbox.com/scl/fi/bv9vpu2gwkn0qughpqkz0/app-universal-release.apk?rlkey=7rzlzooufftmatqdpa1x2mpam&st=y9w53qvc&dl=1">
+       href="https://raw.githubusercontent.com/Jbrimz088/Downloader/main/Apps/J-TV/apk/J-TV-universal.apk">
        DOWNLOAD APK
     </a>
 
     <a class="btn fallback" 
-       href="https://www.dropbox.com/scl/fi/y51qk6cd9ljp2fulgoyvw/J-TV_universal.apk?rlkey=sh36b2ellos9gppyebqgg5vca&st=imkufuay&dl=1">
-       Alternative Link (Drive)
+       href="https://raw.githubusercontent.com/Jbrimz088/Downloader/main/Apps/J-TV/apk/J-TV-universal.apk">
+       Alternative Link (GitHub)
     </a>
 
     <div class="url-box">
       <strong>Direct URL:</strong><br>
-       https://www.dropbox.com/scl/fi/y51qk6cd9ljp2fulgoyvw/J-TV_universal.apk?rlkey=sh36b2ellos9gppyebqgg5vca&st=imkufuay&dl=0
+       https://raw.githubusercontent.com/Jbrimz088/Downloader/main/Apps/J-TV/apk/J-TV-universal.apk
     </div>
 
     <a class="back" href="index.html">← Back to Menu</a>
   </div>
+
 </body>
 </html>
