@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J-Store | Select Device</title>
     <style>
         :root {
             --bg: #0f172a;
@@ -12,7 +15,7 @@
         body {
             background-color: var(--bg);
             color: var(--text);
-            font-family: 'Segoe UI', sans-serif;
+            font-family: 'Segoe UI', system-ui, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -21,9 +24,10 @@
         }
 
         .container {
-            width: 90%;
-            max-width: 900px;
+            width: 95%;
+            max-width: 1000px;
             text-align: center;
+            padding: 20px;
         }
 
         h1 { font-size: 3rem; margin-bottom: 10px; letter-spacing: -1px; }
@@ -44,6 +48,9 @@
             color: white;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             backdrop-filter: blur(10px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .app-card:hover {
@@ -53,11 +60,8 @@
         }
 
         .icon { font-size: 50px; margin-bottom: 20px; display: block; }
-        
-        .app-card h3 { margin: 10px 0; font-size: 1.4rem; }
-        .app-card span { font-size: 0.85rem; color: #38bdf8; font-weight: bold; text-transform: uppercase; }
-        .app-card p { font-size: 0.9rem; color: #94a3b8; line-height: 1.5; }
-
+        .app-card h3 { margin: 10px 0; font-size: 1.4rem; color: var(--accent); }
+        .app-card p { font-size: 0.9rem; color: #94a3b8; line-height: 1.5; margin: 0; }
     </style>
 </head>
 <body>
@@ -68,21 +72,21 @@
 
     <div class="app-grid">
         <a href="apk.html" class="app-card">
-            <span class="icon">Apk</span>
-            <span>J-TV Apk App (for FireSticks, Android TV, Meta Quests, Android Phones, And Most Android Systems)</span>
+            <span class="icon">🤖</span>
+            <h3>Android / FireStick</h3>
+            <p>J-TV APK for FireSticks, Android TV, Quest, and Phones.</p>
         </a>
 
         <a href="iPhone.html" class="app-card">
-            <span class="icon">iPhone</span>
-            <span>J-TV iPhone App (All Apple Phone Devices)</span>
+            <span class="icon">🍎</span>
+            <h3>iPhone / iOS</h3>
+            <p>J-TV for all Apple mobile devices.</p>
+        </a>
 
-                <div class="app-grid">
         <a href="windowsapp.html" class="app-card">
-            <span class="icon">EXE</span>
-            <span>J-TV exe App (for Window Systems, Linux Wine)</span>
-            
-        </a>
-        </a>
+            <span class="icon">🪟</span>
+            <h3>Windows / PC</h3>
+            <p>J-TV EXE for Windows Systems and Linux (Wine).</p>
         </a>
     </div>
 </div>
