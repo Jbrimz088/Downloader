@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>J-TV</title>
+    <title>Welcome • J-TV</title>
     <style>
         :root {
             --bg: #0f172a;
@@ -24,10 +24,10 @@
         }
 
         .container {
-            width: 95%;
-            max-width: 1000px;
+            width: 90%;
+            max-width: 900px;
             text-align: center;
-            padding: 20px;
+            padding: 40px 0;
         }
 
         h1 { font-size: 3rem; margin-bottom: 10px; letter-spacing: -1px; }
@@ -50,7 +50,7 @@
             backdrop-filter: blur(10px);
             display: flex;
             flex-direction: column;
-            align-items: center;
+            gap: 10px;
         }
 
         .app-card:hover {
@@ -59,9 +59,8 @@
             border-color: var(--accent);
         }
 
-        .icon { font-size: 50px; margin-bottom: 20px; display: block; }
-        .app-card h3 { margin: 10px 0; font-size: 1.4rem; color: var(--accent); }
-        .app-card p { font-size: 0.9rem; color: #94a3b8; line-height: 1.5; margin: 0; }
+        .icon { font-size: 40px; font-weight: bold; color: var(--accent); display: block; }
+        .app-card span { font-size: 0.9rem; color: #94a3b8; line-height: 1.5; }
     </style>
 </head>
 <body>
@@ -72,21 +71,18 @@
 
     <div class="app-grid">
         <a href="apk.html" class="app-card">
-            <span class="icon">🤖</span>
-            <h3>Android / FireStick</h3>
-            <p>J-TV APK for FireSticks, Android TV, Quest, and Phones.</p>
+            <span class="icon">APK</span>
+            <span>J-TV Apk App (for FireSticks, Android TV, Meta Quests, Android Phones, and Most Android Systems)</span>
         </a>
 
         <a href="iPhone.html" class="app-card">
-            <span class="icon">🍎</span>
-            <h3>iPhone / iOS</h3>
-            <p>J-TV for all Apple mobile devices.</p>
+            <span class="icon">iPhone</span>
+            <span>J-TV iPhone App (All Apple Phone Devices)</span>
         </a>
 
         <a href="windowsapp.html" class="app-card">
-            <span class="icon">🪟</span>
-            <h3>Windows / PC</h3>
-            <p>J-TV EXE for Windows Systems and Linux (Wine).</p>
+            <span class="icon">EXE</span>
+            <span>J-TV exe App (for Window Systems, Linux Wine)</span>
         </a>
     </div>
 </div>
